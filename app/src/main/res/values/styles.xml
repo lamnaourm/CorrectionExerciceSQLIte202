@@ -5,10 +5,28 @@
     <style name="styletitre" parent="android:Widget.TextView">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">20dp</item>
+        <item name="android:padding">13dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">#3949AB</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:textSize">35sp</item>
     </style>
 
     <style name="menubtn" parent="android:Widget.Button">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:background">#FFB300</item>
+        <item name="android:textSize">25sp</item>
+    </style>
+
+    <style name="zonetexte" parent="android:Widget.EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textSize">25sp</item>
     </style>
 </resources>

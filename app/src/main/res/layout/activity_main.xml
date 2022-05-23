@@ -13,18 +13,26 @@
 
     <Button
         style="@style/menubtn"
-        android:text="@string/menu1"/>
+        android:text="@string/menu1"
+        android:id="@+id/b1"
+        android:onClick="acces"/>
 
     <Button
         style="@style/menubtn"
-        android:text="@string/menu2"/>
+        android:text="@string/menu2"
+        android:id="@+id/b2"
+        android:onClick="acces"/>
 
     <Button
         style="@style/menubtn"
-        android:text="@string/menu3"/>
+        android:text="@string/menu3"
+        android:id="@+id/b3"
+        android:onClick="acces"/>
 
     <Button
         style="@style/menubtn"
-        android:text="@string/menu4"/>
+        android:text="@string/menu4"
+        android:id="@+id/b4"
+        android:onClick="acces"/>
 
 </LinearLayout>
