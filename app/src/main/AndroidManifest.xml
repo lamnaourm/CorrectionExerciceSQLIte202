@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CorrectionExerciceSQLIte202">
         <activity
+            android:name=".EditProduit"
+            android:exported="false" />
+        <activity
+            android:name=".AddPRoduit"
+            android:exported="false" />
+        <activity
+            android:name=".FicheProduit"
+            android:exported="false" />
+        <activity
+            android:name=".ListerProduit"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

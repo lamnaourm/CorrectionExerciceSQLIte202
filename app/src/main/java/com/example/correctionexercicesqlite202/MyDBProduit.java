@@ -68,6 +68,7 @@ public class MyDBProduit extends SQLiteOpenHelper {
             p.setFamille(cur.getString(2));
             p.setPrixAchat(cur.getDouble(3));
             p.setPrixVente(cur.getDouble(4));
+
             prds.add(p);
         }
         return prds;
