@@ -1,5 +1,6 @@
 package com.example.correctionexercicesqlite202;
 
+import android.content.ContentValues;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
@@ -33,16 +34,26 @@ public class MyDBProduit extends SQLiteOpenHelper {
         onCreate(sqLiteDatabase);
     }
 
-    public static int insert_produit(SQLiteDatabase sqLiteDatabase, Produit p){
-        return 0;
+    public static long insert_produit(SQLiteDatabase sqLiteDatabase, Produit p){
+        ContentValues ct = new ContentValues();
+        ct.put(COL2,p.getLibelle());
+        ct.put(COL3,p.getFamille());
+        ct.put(COL4,p.getPrixAchat());
+        ct.put(COL5,p.getPrixVente());
+        return sqLiteDatabase.insert(TABLE_NAME,null,ct);
     }
 
-    public static int update_produit(SQLiteDatabase sqLiteDatabase, Produit p){
-        return 0;
+    public static long update_produit(SQLiteDatabase sqLiteDatabase, Produit p){
+        ContentValues ct = new ContentValues();
+        ct.put(COL2,p.getLibelle());
+        ct.put(COL3,p.getFamille());
+        ct.put(COL4,p.getPrixAchat());
+        ct.put(COL5,p.getPrixVente());
+        return sqLiteDatabase.update(TABLE_NAME,ct,"ID = " + p.getId(),null);
     }
 
-    public static int delete_produit(SQLiteDatabase sqLiteDatabase, int id){
-        return 0;
+    public static long delete_produit(SQLiteDatabase sqLiteDatabase, int id){
+        return sqLiteDatabase.delete(TABLE_NAME,"ID = " + id,null);
     }
 
     public static ArrayList<Produit> getAllProds(SQLiteDatabase sqLiteDatabase){
