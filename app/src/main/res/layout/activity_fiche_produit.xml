@@ -1,13 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".FicheProduit">
 
     <TextView
         style="@style/styletitre"
-        android:text="@string/titrefiche"/>
+        android:text="@string/titrefiche" />
+
+    <Spinner
+        android:id="@+id/listprods"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tlib"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Libelle : xxx" />
+
+    <TextView
+        android:id="@+id/tfam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Famille : xxx" />
+
+    <TextView
+        android:id="@+id/tpa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Prix achat : xxx" />
+
+    <TextView
+        android:id="@+id/tpv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Prix vente : xxx" />
 
 </LinearLayout>
